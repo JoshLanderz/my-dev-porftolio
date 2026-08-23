@@ -150,7 +150,7 @@ gsap.to(".featured-projects-title", {
     duration: 1,
     scrollTrigger: {
         trigger: ".featured-projects-title",
-        start: "top 80%",
+        start: "top top",
     }
 })
 
@@ -499,3 +499,105 @@ cards.forEach((card) => {
     });
   });
 });
+
+
+
+/*Fixed Body Navigation*/
+function quickLinksAnimation() {
+
+    const quickLinks = document.querySelector(".quick-links");
+    const toggle = document.querySelector(".quick-links-toggle");
+    const menu = document.querySelector(".quick-links-menu");
+    const links = document.querySelectorAll(".quick-link");
+    const icon = toggle.querySelector("i");
+
+    gsap.set(quickLinks, {
+        opacity: 0,
+        y: 30,
+        pointerEvents: "none"
+    });
+
+    ScrollTrigger.create({
+        trigger: "#hero-section",
+        start: "bottom 25%",
+
+        onEnter: () => {
+            gsap.to(quickLinks, {
+                opacity: 1,
+                y: 0,
+                duration: 0.2,
+                ease: "power2.out",
+                pointerEvents: "auto"
+            });
+        },
+
+        onLeaveBack: () => {
+            closeMenu();
+
+            gsap.to(quickLinks, {
+                opacity: 0,
+                y: 30,
+                duration: 0.2,
+                ease: "power2.in",
+                pointerEvents: "none"
+            });
+        }
+    });
+
+
+    function openMenu() {
+
+        toggle.setAttribute("aria-expanded", "true");
+
+        gsap.to(icon, {
+            rotation: 45,
+            duration: 0.3,
+            ease: "power2.out"
+        });
+
+        gsap.to(links, {
+            opacity: 1,
+            y: 0,
+            pointerEvents: "auto",
+            stagger: 0.07,
+            duration: 0.35,
+            ease: "back.out(1.5)"
+        });
+    }
+
+
+    function closeMenu() {
+
+        toggle.setAttribute("aria-expanded", "false");
+
+        gsap.to(icon, {
+            rotation: 0,
+            duration: 0.3,
+            ease: "power2.out"
+        });
+
+        gsap.to(links, {
+            opacity: 0,
+            y: 10,
+            pointerEvents: "none",
+            stagger: 0.04,
+            duration: 0.25,
+            ease: "power2.in"
+        });
+    }
+
+
+    toggle.addEventListener("click", () => {
+
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+
+    });
+}
+
+quickLinksAnimation();
