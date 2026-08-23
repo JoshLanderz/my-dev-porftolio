@@ -294,6 +294,7 @@ header {
     display: flex;
     align-items: flex-end;
     gap: 7px;
+    border-radius: 150px;
 }
 
 .view-project i {
@@ -749,6 +750,7 @@ section {
     border-image-source: url('SVG Images/Chalkboard/Gradient Checkboard.svg');
     border-image-slice: 10% fill;
     border-image-repeat: stretch;
+    background: white;
 }
 
 .skills-technologies-element-tags-list-row {
