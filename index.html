@@ -61,16 +61,17 @@
 
             <div class="hero-cta-wrapper">
                 <div class="cta-btn-links-wrapper">
-                    <a href="assets/Joshua Watson - Official Resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-btn">
+                    <a href="assets/Joshua Watson - Official Resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-btn" tabindex="1">
                         Resume
                         <i class="fa fas fa-file-alt"></i>
                     </a>
 
-                <a href="" target="_blank" class="cta-btn">
+                <a href="" target="_blank" class="cta-btn" tabindex="2">
                     My Projects
                 </a>
                 </div>
 
+                <!--
                 <div class="cta-social-media-wrapper" style="display: none;">
                     <a href="https://github.com/JoshLanderz" class="social-media-links" target="_blank">
                         <i class="fa fa-github"></i>
@@ -88,7 +89,7 @@
                         <span>Download My Resume</span>
                     </a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
@@ -100,21 +101,42 @@
             <div class="profile-img-links-element-wrapper">
             <!--Element 1-->
             <div class="profile-img-links-element">
-                <a href="https://github.com/JoshLanderz" class="social-media-links" target="_blank">
+                <a href="https://github.com/JoshLanderz" class="social-media-links" target="_blank" tabindex="3">
+                        <div class="bubble-wrapper">
+                            <div class="icon-bubble">
+                            </div>
+                            <div class="icon-bubble">
+                                <img src="/SVG Images/bubble mark.svg" alt="">
+                            </div>
+                        </div>
                     <i class="fa fa-github"></i>
                 </a>
             </div>
 
             <!--Element 2-->
             <div class="profile-img-links-element">
-                <a href="https://www.linkedin.com/in/watson-a-joshua/" class="social-media-links" target="_blank">
+                <a href="https://www.linkedin.com/in/watson-a-joshua/" class="social-media-links" target="_blank" tabindex="4">
+                    <div class="bubble-wrapper" style="left: -6px; top: -5px;">
+                            <div class="icon-bubble">
+                            </div>
+                            <div class="icon-bubble">
+                                <img src="/SVG Images/bubble mark.svg" alt="">
+                            </div>
+                        </div>
                     <i class="fa fab fa-linkedin-in"></i>
                 </a>
             </div>
 
             <!--Element 3-->
             <div class="profile-img-links-element">
-                <a href="" class="social-media-links" target="_blank">
+                <a href="" class="social-media-links" target="_blank" tabindex="5">
+                    <div class="bubble-wrapper">
+                            <div class="icon-bubble">
+                            </div>
+                            <div class="icon-bubble">
+                                <img src="/SVG Images/bubble mark.svg" alt="">
+                            </div>
+                        </div>
                     <i class="fas fas fa-envelope"></i>
                 </a>
             </div>
@@ -122,7 +144,7 @@
 
             <!--Element 4-->
             <div class="hero-profile-location-wrapper">
-                <p class="hero-profile-location">
+                <p class="hero-profile-location" tabindex="6">
                     <img src="Images/Flag_of_Barbados.svg" alt="">
                     <i class="fa fas fa-map-marker-alt" style="display: none;"></i>
                     <span class="barbados-text">Barbados</span>
@@ -135,79 +157,6 @@
 
 
     <main>
-
-    <section id="about-me-section" style="display: none;">
-
-        <div class="section-title-wrapper">
-            <h1 class="section-title">About Me</h1>
-        </div>
-
-
-        <div class="about-me-content">
-
-            <!--Column 1-->
-            <div class="about-me-text-wrapper">
-                <h1 class="about-me-text-main">
-                    I am a frontend enthusiast fully focused on designing and building custom websites from the ground up.
-                </h1>
-
-                <!--
-                <p class="about-me-text">
-                I'm a frontend developer passionate about building modern web applications with clean, efficient code.
-                </p>
-
-                <p class="about-me-text">
-                My journey into web development started with a curiosity about how websites work, and has evolved into a dedication to creating exceptional user experiences.
-                </p>
-
-                <p class="about-me-text">
-                I'm currently looking for opportunities to apply my skills in a real-world setting, collaborate with experienced developers, and contribute to projects that make a difference.
-                </p>
-
-                <p class="about-me-text">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest web development trends.
-                </p>-->
-                
-            </div>
-
-            <!--Column 2-->
-            <div class="about-me-element-wrapper">
-
-                <!--Element 1-->
-                <div class="about-me-element">
-                    <div class="about-me-element-icon-wrapper">
-                        <i class="fa fas fa-broom"></i>
-                    </div>
-                    <div class="about-me-element-textblock">
-                        <h2>Clean Code</h2>
-                        <p>Writing maintainable and scalable code following best practices</p>
-                    </div>
-                </div>
-                <!--Element 2-->
-                <div class="about-me-element">
-                    <div class="about-me-element-icon-wrapper">
-                        <i class="fa fas fa-running"></i>
-                    </div>
-                    <div class="about-me-element-textblock">
-                        <h2>Fast Learner</h2>
-                        <p>Quick to adapt to new technologies and frameworks.</p>
-                    </div>
-                </div>
-                <!--Element 3-->
-                <div class="about-me-element">
-                    <div class="about-me-element-icon-wrapper">
-                        <i class="fa fas fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="about-me-element-textblock">
-                        <h2>Team Player</h2>
-                        <p>Collaborative approach to problem-solving and development</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
 
     <section id="featured-projects-section" class="featured-projects-section">
 
@@ -361,9 +310,9 @@
     <section id="skills-technologies-section">
         <div>
         <div class="skills-technologies-header">
-            <h1 class="section-main-title">Specialties</h1>
+            <h1 class="section-main-title">Technologies</h1>
             <p class="skills-technologies-subtitle">
-                I use these tools to build fast, clean & responsive interfaces <br> that focus on usability, structure, and smooth motion</p>
+                I've been doing frontend web development for about 3 years now, <br> and I'm always eager to learn more in this fast paced industry.
         </div>
 
         <div class="skills-technologies-element-wrapper">
@@ -441,7 +390,7 @@
 
             <!--Trigger Element-->
             <div class="education-content">
-            <div class="booklet-holes-wrapper">
+            <div class="booklet-holes-wrapper" style="display: none;">
                 <img class="booklet-holes" src="SVG Images/booklet-holes.svg" alt="">
             </div>
             
