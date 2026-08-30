@@ -681,6 +681,7 @@ section {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: var(--ff-Averia-Sans-Libre);
         /* background: var(--main-text-gradient);
     -moz-background-clip: text;
     -webkit-background-clip: text;
