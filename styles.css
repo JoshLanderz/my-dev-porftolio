@@ -629,6 +629,20 @@ section {
     transform: translate(-50%, -50%);
     
 }
+
+/* ================================
+   ABOUT ME
+================================ */
+#about-me {
+    outline: outset;
+}
+
+
+
+/* ================================
+   TECHNOLOGIES
+================================ */
+
 #skills-technologies-section {
     color: black;
     display: flex;
@@ -952,7 +966,7 @@ section {
 ================================ */
 
 #featured-projects-section {
-    margin: 3rem 16rem;
+    margin: 3rem;
     padding: 0;
     display: grid;
     gap: 2rem;
@@ -1100,7 +1114,10 @@ section {
    PROJECT-SPECIFIC STYLES
 ================================ */
 
-
+#about-me-section, #featured-projects-section, #skills-technologies-section, #get-in-touch-section {
+    margin-inline: 16rem;
+    padding: 0;
+} 
 
 #get-in-touch-section {
     height: 100vh;
