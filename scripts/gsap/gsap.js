@@ -610,7 +610,7 @@ gsap.to(".other-projects", {
     duration: 1,
     scrollTrigger: {
         trigger: ".other-projects",
-        start: "top 85%",
+        start: "top 80%",
         end: "bottom bottom",
         toggleActions: "play none none none",
     }

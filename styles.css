@@ -638,11 +638,6 @@ section {
 }
 
 
-.featured-projects-navbar {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-}
 /* ================================
    FEATURED PROJECTS
 ================================ */
@@ -661,6 +656,7 @@ section {
 ================================ */
 
 .featured-projects-element-container {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -668,6 +664,55 @@ section {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
+
+
+/* ======================================
+   FEATURED PROJECTS FIXED SIDE NAVBAR
+========================================= */
+.featured-projects-navbar-wrapper {
+    position: absolute;
+    top: 12px;
+    left: -200px;
+    height: 100%;
+    display: grid;
+    place-content: start;
+    gap: 2rem;
+}
+
+.featured-projects-navbar {
+    display: grid;
+    text-align: left;
+    gap: 1rem;
+    width: 100%;
+}
+
+.featured-projects-navbar-item-btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding-left: 8px;
+    border-left: 3px solid black;
+    background: var(--img-gradient);
+    font-family: var(--ff-Averia-Sans-Libre);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: outline ease .2s;
+    cursor: pointer;
+}
+
+.filter-btn {
+    border: none;
+    padding-left: 0px;
+}
+
+.featured-projects-navbar-item-btn:focus {
+    /* outline: 2px solid rgb(0, 0, 0); */
+    transform: translateY(0px);
+}
+
+
+
 
 .featured-projects-element-container.fade-out {
     opacity: 0;
@@ -795,7 +840,7 @@ section {
 .other-projects {
     opacity: 0;
     transform: translateY(100px);
-    margin-block: 6rem 4rem;
+    margin-block: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;

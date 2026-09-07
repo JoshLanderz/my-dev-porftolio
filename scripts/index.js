@@ -1,19 +1,19 @@
 
-const mostRecentProjectBtn = document.getElementById("most-recent-project-btn");
+// const mostRecentProjectBtn = document.getElementById("most-recent-project-btn");
 
-const featuredProjectsContainer = document.querySelector(".featured-projects-element-container");
+// const featuredProjectsContainer = document.querySelector(".featured-projects-element-container");
 
-mostRecentProjectBtn.addEventListener("click", function() {
-    // Step 1: Start fading out
-    featuredProjectsContainer.classList.add("fade-out");
+// mostRecentProjectBtn.addEventListener("click", function() {
+//     // Step 1: Start fading out
+//     featuredProjectsContainer.classList.add("fade-out");
     
-    // Step 2: Wait 300ms (matches CSS transition time) for fade out to finish
-    setTimeout(() => {
-        // Step 3: Change layout and start fading back in
-        featuredProjectsContainer.classList.add("reversed");
-        featuredProjectsContainer.classList.remove("fade-out");
-    }, 300);
-});
+//     // Step 2: Wait 300ms (matches CSS transition time) for fade out to finish
+//     setTimeout(() => {
+//         // Step 3: Change layout and start fading back in
+//         featuredProjectsContainer.classList.add("reversed");
+//         featuredProjectsContainer.classList.remove("fade-out");
+//     }, 300);
+// });
 
 
 document.getElementById("copyright-year").textContent = new Date().getFullYear();
