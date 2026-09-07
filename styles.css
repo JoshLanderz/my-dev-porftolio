@@ -634,7 +634,6 @@ section {
    ABOUT ME
 ================================ */
 #about-me {
-    outline: outset;
 }
 
 
@@ -643,7 +642,7 @@ section {
 ================================ */
 
 #featured-projects-section {
-    margin: 3rem;
+    margin-block: 3rem 0rem;
     padding: 0;
     display: grid;
     gap: 2rem;
@@ -840,7 +839,7 @@ section {
 .other-projects {
     opacity: 0;
     transform: translateY(100px);
-    margin-block: 7rem;
+    margin-block: 7rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1208,34 +1207,31 @@ section {
 } 
 
 #get-in-touch-section {
-    height: 100vh;
     display: grid;
-    place-content: center;
+    margin-block: 0rem;
 }
 
 .get-in-touch-content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 4rem;
 }
 
 .get-in-touch-main-heading {
     display: grid;
-    place-content: center;
-    align-items: center;
     gap: 1rem;
 }
 
-.get-in-touch-main-title {
+.get-in-touch-main-heading .section-main-title {
     font-weight: 500;
-    font-size: 45px;
+    width: fit-content;
+    margin-left: -5px;
     margin-bottom: 1rem;
 }
 
 .get-in-touch-personal-quote {
     font-size: 18px;
-    max-width: 450px;
 }
 
 .get-working-cta-link-wrapper {
@@ -1256,19 +1252,15 @@ section {
 }
 
 .get-in-touch-element-wrapper {
-    display: grid;
-    place-content: center;
-    grid-template-columns: auto auto;
-    gap: 2rem;
+    display: flex;
+    gap: 4rem;
+    margin-top: 2rem;
 }
 
 .get-in-touch-element {
     display: flex;
     align-items: center;
     gap: 1rem;
-    border: 2px solid black;
-    width: 250px;
-    padding: 2rem 2rem;
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-black);
@@ -1279,7 +1271,7 @@ section {
 }
 
 .get-in-touch-element-svg-wrapper i {
-    font-size: 45px;
+    font-size: 25px;
 }
 
 .get-in-touch-element-textblock p {
@@ -1288,10 +1280,8 @@ section {
 
 
 .copyright-wrapper {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    bottom: 120px;
+    margin-block: 4rem;
+    text-align: center;
 }
 
 .copyright-wrapper p {
