@@ -216,8 +216,8 @@ header {
     background: var(--button-gradient);
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    font-family: var(--ff-Averia-Sans-Libre);
     -webkit-text-fill-color: transparent;
+    font-family: var(--ff-Averia-Sans-Libre);
 }
 
 .hero-profile-pitch-wrapper {
@@ -1214,13 +1214,22 @@ section {
 .get-in-touch-content {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
+    gap: 5rem;
+}
+
+.logo-wrapper {
+}
+
+.logo {
+    width: 100%;
+    height: 180px;
 }
 
 .get-in-touch-main-heading {
     display: grid;
-    gap: 1rem;
 }
 
 .get-in-touch-main-heading .section-main-title {
@@ -1237,6 +1246,7 @@ section {
 .get-working-cta-link-wrapper {
     margin-block: 2rem;
 }
+
 .get-working-cta-link {
     background-color: black;
     color: white;
@@ -1270,13 +1280,61 @@ section {
     color: default;
 }
 
+
+
+
 .get-in-touch-element-svg-wrapper i {
     font-size: 25px;
+    background-size: 400%;
+    background-position: right;
+    background: var(--button-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .get-in-touch-element-textblock p {
     display: none;
 }
+
+.get-in-touch-element-textblock h3 {
+    position: relative;
+    display: inline-block;
+}
+
+.scribble-underline {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 12px;
+    overflow: visible;
+}
+
+.scribble-underline path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    transition: stroke-dashoffset 0.4s ease;
+}
+
+.get-in-touch-element:hover .scribble-underline path {
+    stroke-dashoffset: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .copyright-wrapper {
@@ -1366,3 +1424,5 @@ section {
 
     background: var(--button-gradient);
 }
+
+
