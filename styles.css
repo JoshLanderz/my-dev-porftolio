@@ -792,6 +792,52 @@ section {
     border-radius: 5px;
 }
 
+.other-projects {
+    opacity: 0;
+    transform: translateY(100px);
+    margin-block: 6rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; 
+}
+
+.other-projects p {
+    font-size: 20px;
+    font-weight: 600;
+    background: var(--img-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.other-projects-links-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.other-projects-links-content {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.other-projects-links-content svg, .other-projects-links-content img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+.other-projects-links-content > .element-tags-tooltip {
+    opacity: 0 !important;
+}
+
+.other-projects-links-content:hover > .element-tags-tooltip {
+    opacity: 1 !important;
+}
+
 /* ================================
    TECHNOLOGIES
 ================================ */
@@ -896,7 +942,7 @@ section {
     text-align: center;
 }
 
-.skills-technologies-element-tags-tooltip {
+.element-tags-tooltip {
     position: absolute;
     opacity: 0;
     transform: translate(-50%, -50%);
@@ -1137,7 +1183,6 @@ section {
 }
 
 .get-in-touch-main-title {
-    font-family: var(--ff-Montserrat);
     font-weight: 500;
     font-size: 45px;
     margin-bottom: 1rem;

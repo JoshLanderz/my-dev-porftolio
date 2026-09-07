@@ -601,3 +601,17 @@ function quickLinksAnimation() {
 }
 
 quickLinksAnimation();
+
+
+
+gsap.to(".other-projects", { 
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".other-projects",
+        start: "top 85%",
+        end: "bottom bottom",
+        toggleActions: "play none none none",
+    }
+})
