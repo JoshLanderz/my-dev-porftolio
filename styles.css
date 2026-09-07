@@ -638,329 +638,11 @@ section {
 }
 
 
-
-/* ================================
-   TECHNOLOGIES
-================================ */
-
-#skills-technologies-section {
-    color: black;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.skills-technologies-header {
-    display: grid;
-    gap: 10px;
-    transform: translateY(-150px);
-    opacity: 0;
-}
-
-.section-main-title {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    z-index: 1;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.5123rem + 2.7869vw, 3.125rem);
-    font-family: var(--ff-Averia-Sans-Libre);
-    background: var(--img-gradient);
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-        /* background: var(--main-text-gradient);
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-
 .featured-projects-navbar {
     display: flex;
     gap: 1rem;
     width: 100%;
 }
-
-.education-main-title {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.5123rem + 2.7869vw, 3.125rem);
-    background: var(--img-gradient);
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: var(--ff-Averia-Sans-Libre);
-        /* background: var(--main-text-gradient);
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-
-.skills-technologies-subtitle {
-    text-align: center;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.067);
-    font-weight: 500;
-}
-
-.skills-technologies-element-wrapper {
-    display: grid;
-    gap: 3rem;
-    margin-top: 3rem;
-    opacity: 0;
-    transform: scale(0.1);
-}
-
-.skills-technologies-element {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 4rem;
-}
-
-.skills-technologies-element-title {
-    width: fit-content;
-    font-weight: 300;
-    font-size: 30px;
-}
-
-.skills-technologies-element-tags-list {
-    position: relative;
-    display: grid;
-    place-content: center;
-    width: 100%;
-    gap: 5rem;
-    overflow: hidden;
-    border-radius: 15px;
-    padding: 3rem 3rem 5rem 3rem;
-    border: 15px solid transparent;
-    border-image-source: url('SVG Images/Chalkboard/Gradient Checkboard.svg');
-    border-image-slice: 10% fill;
-    border-image-repeat: stretch;
-    background: white;
-}
-
-.skills-technologies-element-tags-list-row {
-    display: flex;
-    gap: 4rem;
-    opacity: 1;
-}
-
-.skills-technologies-element-tags-list-row:first-child {
-    transform: translateY(450px);
-}
-
-.skills-technologies-element-tags-list-row:nth-child(2) {
-    transform: translateY(450px);
-}
-
-.skills-technologies-element-tags {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-content: center;
-    place-items: center;
-    gap: 14px;
-    text-align: center;
-}
-
-.skills-technologies-element-tags-tooltip {
-    position: absolute;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    bottom: -35px;
-    left: 50%;
-    right: 50%;
-    width: max-content;
-    font-size: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 4px 4px 16px rgb(255, 255, 255);
-    color: var(--clr-white);
-    border-radius: 150px;
-    padding: 2px 12px;
-    animation-name: tooltipCpy;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes tooltipCpy {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.skills-technologies-element-tags img {
-    width: 70px;
-    height: 100%;
-    object-fit: cover;
-}
-
-.mongo {
-    width: 100%;
-    height: auto;    
-}
-
-
-.skills-technologies-element-tags i {
-    font-size: 50px;
-    background: var(--main-text-gradient);
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.skills-technologies-element:before {
-    position: absolute;
-    content: '';
-    z-index: 100;
-    bottom: 7px;
-    right: 100px;
-    width: 40px;
-    background-image: url('SVG Images/Chalkboard/Sketched Eraser.svg');
-    height: 15px;
-}
-
-.skills-technologies-element:after {
-    position: absolute;
-    content: '';
-    z-index: 100;
-    bottom: 7px;
-    right: 50px;
-    width: 35px;
-    border-radius: 150px;
-    background-image: url('SVG Images/Chalkboard/Chalk.svg');
-    height: 10px;
-}
-
-
-#education-section {
-    padding: 0;
-    height: 100vh;
-    display: grid;
-    gap: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.booklet-holes-wrapper {
-    background: var(--button-gradient);
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 100;
-    height: 660px;
-    border: 2px solid rgba(0, 0, 0, 0.063);
-    border-radius: 0px 15px 15px 0px;
-    overflow: hidden;
-    position: fixed;
-}
-
-.booklet-holes {
-    width: 35px;
-    height: 620px;
-    padding: 0rem 4rem 0rem 12rem;
-    opacity: 0.8;
-}
-
-/*
-.education-content-scroll-box {
-    width: 100%;
-    border-style: dashed;
-    border: 5px solid 00040a80;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    }*/
-
-.education-content {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 200%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-.education-content-element {
-    flex: 0 0 100vw;
-    margin-top: 5rem;
-    display: grid;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.education-content-element-institution-logo-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-.education-content-element img {
-    width: 100px;
-    height: 100%;
-    object-fit: cover;
-}
-
-.education-content-element-text-wrapper {
-    position: relative;
-    display: grid;
-    place-content: center;
-    place-items: center;
-}
-
-.education-content-element-institution-name {
-    font-weight: 300;
-}
-
-.breaker {
-    margin-block: 1rem;
-    width: 50%;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.052);
-}
-
-.education-content-element-institution-degree-level {
-    font-weight: 300;
-}
-
-.education-content-element-institution-degree-study {
-    font-weight: 700;
-}
-
-.education-content-element-degree-duration {
-    background-color: gray;
-    margin-block: 1rem;
-    padding: 0.75rem 1rem;
-    color: white;
-    font-weight: 400;
-}
-
-.education-content-element-svg-wrapper img {
-    position: absolute;
-    object-fit: cover;
-    width: 100px;
-    height: fit-content;
-    right: -200px;
-    z-index: 1;
-    bottom: -50px;
-}
-
-
 /* ================================
    FEATURED PROJECTS
 ================================ */
@@ -1109,6 +791,321 @@ section {
     margin-top: 1.5rem;
     border-radius: 5px;
 }
+
+/* ================================
+   TECHNOLOGIES
+================================ */
+
+#skills-technologies-section {
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-technologies-header {
+    display: grid;
+    gap: 10px;
+    transform: translateY(-150px);
+    opacity: 0;
+}
+
+.section-main-title {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    z-index: 1;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.5123rem + 2.7869vw, 3.125rem);
+    font-family: var(--ff-Averia-Sans-Libre);
+    background: var(--img-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        /* background: var(--main-text-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+
+.skills-technologies-subtitle {
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.067);
+    font-weight: 500;
+}
+
+.skills-technologies-element-wrapper {
+    display: grid;
+    gap: 3rem;
+    margin-top: 3rem;
+    opacity: 0;
+    transform: scale(0.1);
+}
+
+.skills-technologies-element {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 4rem;
+}
+
+.skills-technologies-element-title {
+    width: fit-content;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.skills-technologies-element-tags-list {
+    position: relative;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    gap: 5rem;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 3rem 3rem 5rem 3rem;
+    border: 15px solid transparent;
+    border-image-source: url('SVG Images/Chalkboard/Gradient Checkboard.svg');
+    border-image-slice: 10% fill;
+    border-image-repeat: stretch;
+    background: white;
+}
+
+.skills-technologies-element-tags-list-row {
+    display: flex;
+    gap: 4rem;
+    opacity: 1;
+}
+
+.skills-technologies-element-tags-list-row:first-child {
+    transform: translateY(450px);
+}
+
+.skills-technologies-element-tags-list-row:nth-child(2) {
+    transform: translateY(450px);
+}
+
+.skills-technologies-element-tags {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.skills-technologies-element-tags-tooltip {
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    bottom: -35px;
+    left: 50%;
+    right: 50%;
+    width: max-content;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 4px 16px rgb(255, 255, 255);
+    color: var(--clr-white);
+    border-radius: 150px;
+    padding: 2px 12px;
+    animation-name: tooltipCpy;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tooltipCpy {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skills-technologies-element-tags img {
+    width: 70px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mongo {
+    width: 100%;
+    height: auto;    
+}
+
+
+.skills-technologies-element-tags i {
+    font-size: 50px;
+    background: var(--main-text-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-technologies-element:before {
+    position: absolute;
+    content: '';
+    z-index: 100;
+    bottom: 7px;
+    right: 100px;
+    width: 40px;
+    background-image: url('SVG Images/Chalkboard/Sketched Eraser.svg');
+    height: 15px;
+}
+
+.skills-technologies-element:after {
+    position: absolute;
+    content: '';
+    z-index: 100;
+    bottom: 7px;
+    right: 50px;
+    width: 35px;
+    border-radius: 150px;
+    background-image: url('SVG Images/Chalkboard/Chalk.svg');
+    height: 10px;
+}
+
+
+.education-main-title {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.5123rem + 2.7869vw, 3.125rem);
+    background: var(--img-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--ff-Averia-Sans-Libre);
+        /* background: var(--main-text-gradient);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+#education-section {
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.booklet-holes-wrapper {
+    background: var(--button-gradient);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    height: 660px;
+    border: 2px solid rgba(0, 0, 0, 0.063);
+    border-radius: 0px 15px 15px 0px;
+    overflow: hidden;
+    position: fixed;
+}
+
+.booklet-holes {
+    width: 35px;
+    height: 620px;
+    padding: 0rem 4rem 0rem 12rem;
+    opacity: 0.8;
+}
+
+/*
+.education-content-scroll-box {
+    width: 100%;
+    border-style: dashed;
+    border: 5px solid 00040a80;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    }*/
+
+.education-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 200%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.education-content-element {
+    flex: 0 0 100vw;
+    margin-top: 5rem;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.education-content-element-institution-logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.education-content-element img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.education-content-element-text-wrapper {
+    position: relative;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.education-content-element-institution-name {
+    font-weight: 300;
+}
+
+.breaker {
+    margin-block: 1rem;
+    width: 50%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.052);
+}
+
+.education-content-element-institution-degree-level {
+    font-weight: 300;
+}
+
+.education-content-element-institution-degree-study {
+    font-weight: 700;
+}
+
+.education-content-element-degree-duration {
+    background-color: gray;
+    margin-block: 1rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+.education-content-element-svg-wrapper img {
+    position: absolute;
+    object-fit: cover;
+    width: 100px;
+    height: fit-content;
+    right: -200px;
+    z-index: 1;
+    bottom: -50px;
+}
+
 
 /* ================================
    PROJECT-SPECIFIC STYLES
