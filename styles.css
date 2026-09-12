@@ -1021,9 +1021,8 @@ section {
     object-fit: cover;
 }
 
-.mongo {
-    width: 100%;
-    height: auto;    
+.skills-technologies-element-tags .vanilla-js {
+    width: 50px;
 }
 
 
