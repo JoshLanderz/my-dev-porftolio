@@ -92,7 +92,13 @@ gsap.to(".skills-technologies-element-tags:nth-child(2) i, .skills-technologies-
 
 
 
-
+gsap.from(".skills-technologies-element-tags", {
+    opacity: 0,
+    y: 20,
+    delay: 5,
+    stagger: 0.2,
+    duration: 0.6
+});
 
 
 
@@ -310,6 +316,12 @@ animateText()
 
 function profileSocialLinksAnimation(){
     const socialLinkIcons = gsap.utils.toArray(".profile-img-links-element .social-media-links");
+
+    gsap.to(".social-media-links", {
+        ease: "power3.inOut",
+        duration: 3,
+        opacity: 1
+    })
     
     socialLinkIcons.forEach((sociallinkiconsi) => {
 
@@ -321,7 +333,7 @@ function profileSocialLinksAnimation(){
 s1.to(sociallinkiconsi, { 
   duration: 3, 
   y: "+=15", 
-  rotation: "-=3", 
+  rotation: "-=3",
   ease: "power1.inOut" 
 })
 .to(sociallinkiconsi, { 
@@ -353,6 +365,12 @@ function locationIconAnimation() {
     console.error("No element found with .hero-profile-location");
     return;
   }
+
+    gsap.to(".hero-profile-location", {
+        ease: "power3.inOut",
+        duration: 3,
+        opacity: 1
+    })
 
   const t2 = gsap.timeline({
     repeat: -1,

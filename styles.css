@@ -328,6 +328,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
+    opacity: 0;
 
     transition: outline 0.2s ease;
 }
@@ -529,6 +530,7 @@ header {
 }
 
 .hero-profile-location {
+    opacity: 0;
     width: max-content;
     display: flex;
     align-items: center;
